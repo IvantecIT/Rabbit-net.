@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit.net</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .registration {
+            background-color: #2e2e2e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .registration h2 {
+            margin-top: 0;
+        }
+        .registration input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #3a3a3a;
+            color: #f4f4f4;
+        }
+        .registration button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .registration button:hover {
+            background-color: #0056b3;
+        }
+        .topic {
+            background-color: #2e2e2e;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .topic h2 {
+            margin-top: 0;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .actions button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .actions button:hover {
+            background-color: #0056b3;
+        }
+        .actions .dislike-btn {
+            background-color: #dc3545;
+        }
+        .actions .dislike-btn:hover {
+            background-color: #c82333;
+        }
+        .actions a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .actions a:hover {
+            background-color: #0056b3;
+        }
+        .petition {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3a3a3a;
+            border-left: 5px solid #007BFF;
+        }
+        .petition button {
+            background-color: #28a745;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        .petition button:hover {
+            background-color: #218838;
+        }
+        .messages {
+            background-color: #2e2e2e;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .messages h2 {
+            margin-top: 0;
+        }
+        .messages textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #3a3a3a;
+            color: #f4f4f4;
+        }
+        .messages button {
+            background-color: #007BFF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        .messages button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать на Rabbit.net</h1>
+</header>
+
+<main>
+    <div class="registration">
+        <h2>Регистрация</h2>
+        <form>
+            <input type="email" placeholder="Введите ваш email" required>
+            <input type="password" placeholder="Введите ваш пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="topic">
+        <h2>Пример Тема</h2>
+        <p>Это пример текста обсуждаемой темы. Пользователи могут оставлять свои комментарии и высказывать мнение.</p>
+        <div class="actions">
+            <div>
+                <button>👍 Лайк</button>
+                <button class="dislike-btn">👎 Дизлайк</button>
+            </div>
+            <a href="#petition">Создать петицию</a>
+        </div>
+    </div>
+
+    <div class="petition" id="petition">
+        <h3>Создать Петицию</h3>
+        <p>Если вы поддерживаете данную тему, вы можете создать петицию и собрать подписи.</p>
+        <button>Подписать Петицию</button>
+    </div>
+
+    <div class="messages">
+        <h2>Личные Сообщения</h2>
+        <form>
+            <textarea rows="5" placeholder="Введите ваше сообщение..."></textarea>
+            <button type="submit">Отправить сообщение</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
